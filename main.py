@@ -7,7 +7,7 @@ import pytesseract
 import google.generativeai as genai
 
 # Configure Gemini API
-genai.configure(api_key=os.getenv("AIzaSyCuhh8OlesA16aGZbIkS_IbEycFOpx8gS0"))
+genai.configure("AIzaSyCuhh8OlesA16aGZbIkS_IbEycFOpx8gS0")
 model = genai.GenerativeModel("gemini-2.0-flash")
 
 app = Flask(__name__)
